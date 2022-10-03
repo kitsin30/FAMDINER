@@ -1,0 +1,58 @@
+#bgaboutus{
+    background-color: lightblue;
+    color: black;
+}
+
+.aboutpage{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.aboutpage h1{
+    background-color: #383636;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.content{
+    background-color: #1e2026;
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+}
+.paragraph{
+    font-size: 20px;
+    line-height: 40px;
+    margin: 20px 20px;
+}
+.contact{
+    font-size: 15px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+.content h3{
+    font-size: 25px;
+    margin: 20px 20px;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+    .aboutpage h1{
+        font-size: 30px;
+    }
+    .paragraph{
+        font-size: 15px;
+    }
+    .contact{
+        font-size: 10px;
+    }
+    .content h3{
+        font-size: 20px;
+    }
+}

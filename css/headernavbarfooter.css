@@ -1,0 +1,144 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* header */
+.header{
+    background-color: #25304d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+}
+.header img{
+    margin-left: 5px;
+}
+.tombol a{
+    color: white;
+    font-size: 12px;
+    padding: 3px 3px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 5px solid #2b2b2b;
+    border-radius: 50px;
+    background-color: #2b2b2b;
+    margin-right: 5px;
+}
+.header img{
+    width: 100px;
+    height: auto;
+}
+
+
+/* navbar */
+.navbar{
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    height: 40px;
+}
+.navbar a{
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav:hover{
+    background-color: lightblue;
+    color: black;
+}
+
+.geser{
+    position: relative;
+    width: auto;
+    height: 100%;
+}
+.submenu{
+    list-style: none;
+    background-color: #333333;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.submenu a{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submenu a:hover{
+    background-color: lightblue;
+    color: black;
+}
+.geser:hover .submenu{
+    color: black;
+    display: block;
+    animation: dropdown 0.5s ease-in-out;
+    transform-origin: top;
+}
+@keyframes dropdown{
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
+
+/* footer */
+.footer{
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer h3{
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    color: white;
+    font-size: 12px;
+}
+.sosmed{
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+.sosmed img{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .header img, .tombol{
+        margin-bottom: 15px;
+    }
+}

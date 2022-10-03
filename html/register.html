@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/headernavbarfooter.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/register.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="../images/logo.svg" alt="">
+        <div class="tombol">
+            <a href="../html/register.html">REGISTER</a>
+            <a href="../html/login.html">LOGIN</a>
+        </div>
+    </div>
+    <div class="navbar">
+        <a id="bghome" class="nav" href="../html/home.html">HOME</a>
+        <div class="geser">
+            <a id="bgmenu" class="nav" href="#">MENU</a>
+            <div class="submenu">
+                <a href="../html/menu.html">RICE&PASTA</a>
+            </div>
+        </div>
+        <a id="bgaboutus" class="nav" href="../html/aboutus.html">ABOUT US</a>
+    </div>
+
+    <form action="../html/register.html" onsubmit="return validateregis()" method="post">
+        <div class="registerpage">
+            <h1>Register</h1>
+            <div class="regis">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" class="regisform" autocomplete="off">
+                <label for="regisemail">Email</label>
+                <input type="email" name="regisemail" id="regisemail" class="regisform" autocomplete="off">
+                <label for="gender">Gender</label>
+                <div class="regisform">
+                    <input type="radio" name="gender" id="male">Male
+                    <input type="radio" name="gender" id="female">Female
+                </div>
+                <label for="city">City</label>
+                <select name="city" id="city" class="regisform">
+                    <option selected hidden value="kosong">select your city</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Malang">Malang</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Bekasi">Bekasi</option>
+                    <option value="Bogor">Bogor</option>
+                </select>
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" class="regisform" autocomplete="off">
+                <label for="confirm">Confirm Password</label>
+                <input type="password" name="confirm" id="confirm" class="regisform" autocomplete="off">
+            </div>
+            <button type="submit" class="regisbutton">Register</button>
+        </div>
+    </form>
+
+    <div class="footer">
+        <div class="sosmed">
+            <a href="https://twitter.com/" target="_blank"><img src="../images/twitter.png" alt=""></a>
+            <a href="https://id-id.facebook.com/" target="_blank"><img src="../images/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram.png" alt=""></a>
+        </div>
+        <h3>Copyright @ 2021 kit sin. All Rights Reserved</h3>
+    </div>
+</body>
+</html>
